@@ -1,0 +1,28 @@
+.caption {
+  // width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #c4c4c4;
+  background-image: url(../images/BgImgOverlay.png), url(../images/BgImgMain.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+
+  &__header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+}

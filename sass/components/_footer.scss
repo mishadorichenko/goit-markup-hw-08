@@ -1,0 +1,13 @@
+.footer {
+  // width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--bg-secondary-color);
+  padding: 60px 0;
+
+  &--container {
+    display: flex;
+    gap: 70px;
+  }
+}

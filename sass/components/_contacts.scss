@@ -1,0 +1,47 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  color: var(--footer-address-color);
+  line-height: 1.71;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+
+  &__email,
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    color: var(--primary-text-color);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__email:hover,
+  &__email:focus,
+  &__phone:hover,
+  &__phone:focus {
+    color: var(--hover-focus-color);
+  }
+}

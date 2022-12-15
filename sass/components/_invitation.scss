@@ -1,0 +1,29 @@
+.invitation {
+  padding-top: 12px;
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+
+  & .socials__link {
+    background: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .socials__icon {
+    fill: var(--secondary-text-color);
+  }
+
+  & .socials__link:hover,
+  & .socials__link:focus {
+    background-color: var(--hover-focus-color);
+  }
+}

@@ -1,0 +1,13 @@
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &_title {
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--headers-text-color);
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+}
