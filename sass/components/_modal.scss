@@ -146,9 +146,19 @@
     margin-bottom: 30px;
   }
 
-  &-form-agreement-desc {
-    line-height: 1.7;
-    user-select: none;
+  @media screen and (min-width: 480px) {
+    &-form-agreement-desc {
+      font-size: 12px;
+      line-height: 1.17;
+      user-select: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &-form-agreement-desc {
+      line-height: 1.7;
+      user-select: none;
+    }
   }
 
   &-form-agreement-link {

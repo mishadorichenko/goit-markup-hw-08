@@ -103,6 +103,11 @@ address {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -364,6 +369,11 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .caption__header {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .caption__header {
@@ -1244,12 +1254,24 @@ address {
   gap: 7px;
   margin-bottom: 30px;
 }
-.modal-form-agreement-desc {
-  line-height: 1.7;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+@media screen and (min-width: 480px) {
+  .modal-form-agreement-desc {
+    font-size: 12px;
+    line-height: 1.17;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    line-height: 1.7;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
 }
 .modal-form-agreement-link {
   display: inline-block;

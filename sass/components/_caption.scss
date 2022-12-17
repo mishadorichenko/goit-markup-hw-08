@@ -47,9 +47,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-
-    // width: 360px;
-
     font-weight: 900;
 
     font-size: 26px;
@@ -58,6 +55,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 480px) {
+      width: 360px;
+    }
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
