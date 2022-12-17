@@ -1,7 +1,12 @@
 // variables
 @import './utils/variables';
+@import './utils/placeholders';
+
+// base
 @import './base/reset';
 @import './base/base';
+
+// components
 @import './components/container';
 @import './components/buttons';
 @import './components/logo';
@@ -20,6 +25,7 @@
 @import './components/address';
 @import './components/invitation';
 @import './components/subscribe';
+@import './components/menu';
 
 // Portfolio
 @import './components/filter';

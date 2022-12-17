@@ -1,8 +1,11 @@
 .invitation {
-  padding-top: 12px;
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
 
   &__title {
     margin-bottom: 20px;
+    display: block;
 
     font-weight: 700;
     line-height: 1.14;

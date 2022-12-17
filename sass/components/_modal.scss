@@ -4,8 +4,8 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   background: var(--bg-primary-color);
@@ -16,6 +16,11 @@
   /* animation-name: appearWindow;
   animation-duration: 5s; */
   /* animation: rotate-vert-center 0.5s both; */
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 
   &-btn-close {
     position: absolute;

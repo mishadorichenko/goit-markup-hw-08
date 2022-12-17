@@ -1,9 +1,24 @@
-.address__house {
-  color: var(--bg-primary-color);
-
-  margin-bottom: 9px;
+.address {
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
 }
 
-.address__mail {
-  margin-bottom: 9px;
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.address__link {
+  color: var(--footer-address-color);
+  line-height: 1.71;
+
+  &--white {
+    color: var(--bg-primary-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
 }

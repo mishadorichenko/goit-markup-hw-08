@@ -3,13 +3,14 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -17,6 +18,14 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__icon {

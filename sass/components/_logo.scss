@@ -1,10 +1,15 @@
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--logo-main-color);
-  margin-right: 93px;
+  @extend %logo;
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &--theme-dark {
     color: var(--logo-header-color);
@@ -15,7 +20,7 @@
   }
 
   &__footer {
-    @extend .logo;
+    @extend %logo;
     margin-bottom: 20px;
   }
 }

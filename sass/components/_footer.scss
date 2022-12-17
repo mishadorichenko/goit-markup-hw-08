@@ -1,13 +1,21 @@
 .footer {
-  // width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-
   background-color: var(--bg-secondary-color);
   padding: 60px 0;
 
-  &--container {
-    display: flex;
-    gap: 70px;
+  &__container {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      gap: 70px;
+      justify-content: flex-start;
+    }
   }
 }

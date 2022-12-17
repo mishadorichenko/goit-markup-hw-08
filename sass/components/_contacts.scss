@@ -1,8 +1,5 @@
 .contacts {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-
+  display: none;
   color: var(--footer-address-color);
   line-height: 1.71;
 
@@ -10,19 +7,30 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--hover-focus-color);
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    display: block;
   }
 
-  &__email,
-  &__phone {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
+  }
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+  &__item {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     font-weight: 500;
     color: var(--primary-text-color);
@@ -32,16 +40,21 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      gap: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
   }
 
   &__icon {
     fill: currentColor;
-  }
-
-  &__email:hover,
-  &__email:focus,
-  &__phone:hover,
-  &__phone:focus {
-    color: var(--hover-focus-color);
   }
 }
